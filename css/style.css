@@ -1,0 +1,604 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html,
+body {
+    width: 100%;
+    overflow-x: hidden;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* header */
+.banner-contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 30px;
+    background-color: black;
+    color: white;
+}
+
+
+.email a {
+    text-decoration: none;
+    color: white;
+}
+
+.main-social-media {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.sub-social-media {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+
+.sub-social-media a {
+    text-decoration: none;
+    color: white;
+
+    transition: all 0.3s ease;
+}
+
+.sub-social-media a:hover {
+    color: gold;
+
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+input {
+    display: none;
+}
+
+.main-header {
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: gold;
+
+}
+
+.sub-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu ul li {
+    display: inline-block;
+    margin-right: 50px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+
+    position: relative;
+    padding-bottom: 3px;
+}
+
+nav ul li a::after {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: black;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.5s ease;
+
+}
+
+nav ul li a:hover::after {
+    transform: scaleX(1);
+}
+
+.sub-header button {
+    border: none;
+    background-color: transparent;
+    background-color: black;
+    padding: 5px 18px;
+    border-radius: 100px;
+}
+
+.sub-header button a {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+
+/* banner */
+.main-banner {
+    padding: 0 30px;
+    background-color: black;
+    color: white;
+    position: relative;
+
+    margin-bottom: 100px;
+}
+
+.main-banner::after {
+    content: "";
+    position: absolute;
+    background-color: gold;
+    height: 10px;
+    width: 35%;
+    bottom: 0;
+    left: 20%;
+}
+
+.main-banner::before {
+    content: "";
+    position: absolute;
+    background-color: rgb(255, 217, 0);
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+    bottom: 25%;
+    right: 17%;
+    z-index: 1;
+}
+
+.sub-banner {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    align-items: center;
+
+}
+
+.sub-banner img {
+    width: 25%;
+    z-index: 100;
+}
+
+.banner-titel p:nth-child(1) {
+    border-left: 4px solid #ffd700;
+    height: 25px;
+    padding-left: 10px;
+}
+
+.sub-banner p {
+    width: 80%;
+    line-height: 1.5;
+    font-size: 1.1em;
+}
+
+.skils {
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
+.skils li {
+    padding: 5px;
+}
+
+.banner-titel button {
+    margin-top: 30px;
+    border: none;
+    background-color: gold;
+    padding: 10px;
+    border-radius: 100px;
+}
+
+.banner-titel button a {
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+}
+
+/* Titel */
+.main-titel {
+    text-align: center;
+    margin-bottom: 100px;
+
+}
+
+.sub-titel p {
+    font-size: 1.1em;
+    color: gray;
+    width: 600px;
+    margin: 0 auto;
+    font-weight: bold;
+}
+
+.sub-titel button {
+    margin-top: 30px;
+    border: none;
+    background-color: gold;
+    padding: 10px;
+    border-radius: 100px;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+
+/* Services */
+.main-services {
+    padding: 0 30px;
+    margin-bottom: 100px;
+    background-color: rgb(242, 242, 242);
+    padding: 50px 30px;
+    font-size: 1.1em;
+
+
+}
+
+.main-services h2 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+
+.sub-survices {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.service-card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    background-color: gold;
+    padding: 30px;
+    width: 300px;
+    height: 200px;
+    border-radius: 20px;
+
+}
+
+.service-card>div>h3 {
+    margin-bottom: 10px;
+}
+
+/* My Teaching Method */
+.main-teaching {
+    margin-bottom: 100px;
+}
+
+.sub-teaching {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+
+.sub-teaching img {
+    width: 25%;
+    border-radius: 200px;
+    background-color: gold;
+    padding-right: 20px;
+}
+
+.sub-teaching>div {
+    text-align: right;
+}
+
+.sub-teaching>div>h4 {
+    margin-bottom: 30px;
+    font-size: 2em;
+}
+
+.sub-teaching>div>p {
+    width: 500px;
+    line-height: 1.5;
+    font-size: 1.1em;
+    color: gray;
+}
+
+.sub-teaching>div>a>button {
+    border: none;
+    background-color: gold;
+    padding: 10px;
+    border-radius: 100px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+/*  Social Proof */
+.main-social-prof {
+    padding: 0 30px;
+    margin-bottom: 100px;
+    background-color: gold;
+    padding: 30px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.strength {
+    margin-bottom: 50px;
+    width: 50%;
+    line-height: 1.5;
+    font-size: 1.1em
+}
+
+.strength>div {
+    margin-top: 20px;
+}
+
+.strength>div>h2 {
+    background-color: white;
+    padding: 10px 23px;
+    width: 300px;
+    border-radius: 100px;
+}
+
+.strength h2 {
+    margin-bottom: 20px;
+}
+
+.sub-social-prof {
+    display: grid;
+    grid-template-columns: auto auto;
+    row-gap: 50px;
+    column-gap: 150px;
+    text-align: center;
+    align-items: center;
+}
+
+.social-prof>div {
+    margin-top: 30px;
+}
+
+.social-prof>div>h2 {
+    margin-bottom: 10px;
+    font-size: 2em;
+}
+
+.social-prof>div>p {
+    font-size: 1.1em;
+}
+
+/* Testimonials */
+.main-testimonials {
+    padding: 0 30px;
+    margin-bottom: 100px;
+}
+
+.sub-testimonials {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+}
+
+.main-testimonials h5 {
+    margin-bottom: 50px;
+}
+
+.main-testimonials h5 {
+    font-size: 1.5em;
+    font-weight: bold
+}
+
+.review-one {
+    background-color: rgb(244, 244, 244);
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+    /* border: 1px solid black; */
+}
+
+.review-one:hover {
+    background-color: rgb(234, 234, 234);
+}
+
+.review-one>div>span {
+    font-weight: bold;
+}
+
+.review-one img {
+    width: 60%;
+    height: 100px;
+}
+
+.review-one>div>p {
+    line-height: 1.5;
+    font-size: 1.1em;
+    margin-top: 20px;
+}
+
+/* Pricing Plans */
+.main-plans {
+    margin-bottom: 100px;
+}
+
+.main-plans h2 {
+    margin-bottom: 50px;
+    padding: 0 30px;
+}
+
+.sub-plans {
+    padding: 0 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.plan-card {
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 32%;
+}
+
+.plan-card h3 {
+    margin-bottom: 20px;
+    background-color: rgb(230, 230, 230);
+    border-radius: 5px;
+
+    padding: 30px;
+    border-bottom: 1px solid black;
+    text-align: center;
+    font-size: 1.6em;
+}
+
+.sub-plans>div:nth-child(2)>h3 {
+    background-color: rgb(6, 253, 6);
+    border-radius: 5px;
+
+}
+
+.sub-plans>div:nth-child(3)>h3 {
+    background-color: gold;
+    border-radius: 5px;
+
+}
+
+.plan-info {
+    padding: 10px;
+    line-height: 1.5;
+    font-size: 1.1em;
+}
+
+.plan-desc {
+    color: gray;
+}
+
+.plan-desc p {
+    margin-top: 10px;
+}
+
+.plan-info>div {
+    margin-bottom: 10px;
+}
+
+.plan-info hr {
+    opacity: 0.2;
+    margin-bottom: 15px;
+}
+
+.plan-button a {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.plan-button a button {
+    border: none;
+    width: 100%;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Footer */
+label {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.subscribe {
+    font-size: 1.5em;
+    width: 600px;
+    margin-bottom: 10px;
+}
+
+textarea {
+    resize: none;
+    width: 50%;
+    border: none;
+    background-color: white;
+    border-radius: 5px;
+    height: 40px;
+    padding: 10px;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+.subscribe button {
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+form button {
+    border: none;
+    background-color: gold;
+    padding: 8px 30px;
+    border-radius: 100px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.main-footer {
+    padding: 50px 30px;
+    background-color: rgb(225, 225, 225);
+}
+
+.sub-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+
+}
+
+.contact-info>div {
+    margin-top: 15px;
+}
+
+.contact-info>div>p {
+    line-height: 1.8;
+    font-size: 1.1em;
+}
+
+.social-media {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
+
+.social-media>div {
+    margin-top: 15px;
+}
+
+.media {
+    display: flex;
+    gap: 10px;
+}
+
+.media>div>a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.1em;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.links>a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.1em;
+}
+
+.copy {
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
