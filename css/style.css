@@ -13,7 +13,7 @@ body {
     padding: 0 !important;
 }
 
-/* header */
+/* Banner-Contact */
 .banner-contact {
     display: flex;
     justify-content: space-between;
@@ -51,9 +51,9 @@ body {
 
 .sub-social-media a:hover {
     color: gold;
-
 }
 
+/* header */
 .logo {
     font-weight: bold;
     font-size: 18px;
@@ -101,7 +101,6 @@ nav ul li a::after {
     transform: scaleX(0);
     transform-origin: left;
     transition: transform 0.5s ease;
-
 }
 
 nav ul li a:hover::after {
@@ -122,13 +121,16 @@ nav ul li a:hover::after {
     color: white;
 }
 
+.menu-mobile {
+    display: none;
+}
+
 /* banner */
 .main-banner {
     padding: 0 30px;
     background-color: black;
     color: white;
     position: relative;
-
     margin-bottom: 100px;
 }
 
@@ -159,12 +161,15 @@ nav ul li a:hover::after {
     justify-content: space-between;
     flex-direction: row-reverse;
     align-items: center;
-
 }
 
 .sub-banner img {
     width: 25%;
     z-index: 100;
+}
+
+.sub-banner img:nth-child(2) {
+    display: none;
 }
 
 .banner-titel p:nth-child(1) {
@@ -206,7 +211,6 @@ nav ul li a:hover::after {
 .main-titel {
     text-align: center;
     margin-bottom: 100px;
-
 }
 
 .sub-titel p {
@@ -221,11 +225,10 @@ nav ul li a:hover::after {
     margin-top: 30px;
     border: none;
     background-color: gold;
-    padding: 10px;
+    padding: 10px 20px;
     border-radius: 100px;
     font-weight: bold;
     cursor: pointer;
-
 }
 
 /* Services */
@@ -235,15 +238,12 @@ nav ul li a:hover::after {
     background-color: rgb(242, 242, 242);
     padding: 50px 30px;
     font-size: 1.1em;
-
-
 }
 
 .main-services h2 {
     text-align: center;
     margin-bottom: 50px;
 }
-
 
 .sub-survices {
     display: flex;
@@ -258,9 +258,9 @@ nav ul li a:hover::after {
     gap: 20px;
     text-align: center;
     background-color: gold;
-    padding: 30px;
-    width: 300px;
-    height: 200px;
+    padding: 50px 30px;
+    width: 100%;
+    height: 250px;
     border-radius: 20px;
 
 }
@@ -396,7 +396,6 @@ nav ul li a:hover::after {
     display: flex;
     gap: 20px;
     padding: 10px;
-    /* border: 1px solid black; */
 }
 
 .review-one:hover {
@@ -505,19 +504,20 @@ label {
     flex-direction: column;
     gap: 10px;
     margin-bottom: 20px;
+    margin-top: 20px;
 }
 
-.subscribe {
-    font-size: 1.5em;
-    width: 600px;
-    margin-bottom: 10px;
+.subscribe p {
+    font-size: 1.8em;
+    width: 50%;
+    line-height: 1.5;
 }
 
 textarea {
     resize: none;
     width: 50%;
     border: none;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     border-radius: 5px;
     height: 40px;
     padding: 10px;
@@ -574,6 +574,7 @@ form button {
 
 .media {
     display: flex;
+    align-items: center;
     gap: 10px;
 }
 
