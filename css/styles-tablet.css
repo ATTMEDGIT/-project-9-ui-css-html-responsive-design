@@ -33,11 +33,7 @@
     }
 
     .email {
-        display: block;
-        text-align: center;
-        font-size: 1.3em;
-        margin-top: 60px;
-        color: white;
+        display: none;
 
     }
 
@@ -153,4 +149,70 @@
     .menu-toggle:checked~.overlay {
         display: block;
     }
+
+    /* Banner */
+    .main-banner {
+        margin-top: 36px;
+    }
+
+    .sub-banner img {
+        height: 100%;
+
+    }
+
+    .main-banner::before {
+        all: revert;
+    }
+
+    /* Titel */
+    .sub-titel {
+        padding: 0 30px;
+    }
+
+    /*  Social Proof */
+    .main-social-prof {
+        display: flex;
+        justify-content: space-between;
+        gap: 50px;
+        align-items: start;
+    }
+
+    .sub-social-prof {
+        font-size: 1.3em;
+    }
+
+    .strength h2 {
+        text-align: right;
+    }
+
+    .strength>p {
+        font-size: 1.3em;
+        line-height: 1.5;
+        text-align: right;
+    }
+
+    /************************** Services ***************************/
+    .sub-survices {
+        display: grid;
+        grid-template-columns: auto auto;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .service-card {
+        font-size: 1.3em;
+    }
+
+    /* My Teaching Method */
+    .sub-teaching img {
+        width: 30%;
+    }
+
+    /* Testimonials */
+    .sub-testimonials {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 10px;
+    }
+
 }

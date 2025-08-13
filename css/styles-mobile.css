@@ -242,6 +242,158 @@
         font-size: 1.5em;
     }
 
+    /************************** Services ***************************/
+
+    .sub-survices {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+        padding: 0 20px;
+    }
+
+    .sub-survices {
+        display: grid;
+        grid-template-columns: auto;
+        align-items: center;
+        gap: 10px;
+        font-size: 1.3em;
+    }
+
+
+    /* Social Proof */
+    .main-social-prof {
+        padding: 0 20px;
+        margin-bottom: 100px;
+        background-color: gold;
+        padding: 30px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .strength {
+        margin-bottom: 50px;
+        width: 100%;
+        font-size: 1.3em
+    }
+
+    .strength>div>h2 {
+        margin-top: 20px;
+        font-size: 1.3em;
+        padding: 10px 30px;
+    }
+
+    .sub-social-prof {
+        display: grid;
+        grid-template-columns: auto auto;
+        margin: 0 auto;
+    }
+
+    .sub-social-prof i {
+        font-size: 6em;
+    }
+
+    .social-prof>div>h2 {
+        margin-bottom: 10px;
+        font-size: 2em;
+    }
+
+    .social-prof>div>p {
+        font-size: 1.3em;
+    }
+
+    /* Testimonials */
+    .sub-testimonials {
+        display: grid;
+        grid-template-columns: auto;
+        gap: 10px;
+    }
+
+    .review-one {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .review-one img {
+        width: 60%;
+        height: auto;
+    }
+
+    .review-one>div>span {
+        font-size: 1.5em;
+    }
+
+    .review-one>div>p {
+        font-size: 1.3em;
+    }
+
+    /* Pricing Plans */
+    .sub-plans {
+        display: grid;
+        grid-template-columns: auto;
+        gap: 10px;
+    }
+
+    .plan-card {
+        width: 100%;
+    }
+
+    .plan-card h3 {
+        font-size: 1.8em;
+    }
+
+
+    .plan-info {
+        font-size: 1.3em;
+    }
+
+    .vorteile-plan {
+        font-size: 1.3em;
+    }
+
+    .prise-plan {
+        font-size: 1.3em;
+    }
+
+    .plan-button a {
+        font-size: 1.5em;
+    }
+
+    /* footer */
+    .subscribe p {
+        font-size: 1.8em;
+        width: 90%;
+        line-height: 1.5;
+    }
+
+    textarea {
+        width: 90%;
+        border: none;
+        height: 50px;
+        padding-top: 14px;
+    }
+
+    form button {
+        font-size: 1.4em;
+    }
+
+    .sub-footer {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        font-size: 1.3em;
+
+    }
+
+    .copy {
+        font-size: 1.3em;
+        line-height: 1.5;
+    }
+
+
 
 }
 
@@ -506,30 +658,171 @@
         font-size: 1.5em;
     }
 
-    /* Services */
-    .main-services h2 {
-        font-size: 2em;
-    }
-
+    /************************** Services ***************************/
     .sub-survices {
-        /* all: revert; */
         display: grid;
-        grid-template-columns: auto;
-        justify-content: center;
-        row-gap: 10px;
-        column-gap: 10px;
+        grid-template-columns: auto auto;
+        align-items: center;
+        gap: 10px;
     }
 
     .service-card {
-        /* all: revert; */
+        height: 340px;
+        font-size: 1.3em;
+    }
+
+
+    /* My Teaching Method */
+    .sub-teaching {
         display: flex;
         flex-direction: column;
+        justify-content: center;
         align-items: center;
-        text-align: center;
+        gap: 80px;
+    }
+
+    .sub-teaching img {
+        width: 60%;
+        border-radius: 200px;
         background-color: gold;
-        width: 100%;
-        padding: 40px 10px;
+        padding-right: 20px;
+    }
+
+    .sub-teaching>div {
+        text-align: center;
+        font-size: 1.3em;
+
+    }
+
+    .sub-teaching>div>p {
+        padding: 0 2%;
+        font-size: 1.3em;
+    }
+
+    .sub-teaching>div>a {
         font-size: 1.5em;
+    }
+
+    /* Social Proof */
+    .main-social-prof {
+        background-color: gold;
+        padding: 30px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .strength {
+        width: 100%;
+        font-size: 1.3em
+    }
+
+    .strength>div>h2 {
+        font-size: 1.3em;
+        padding: 10px 30px;
+    }
+
+    .sub-social-prof {
+        display: grid;
+        grid-template-columns: auto auto;
+        margin: 0 auto;
+    }
+
+    .sub-social-prof i {
+        font-size: 5em;
+    }
+
+    .social-prof>div>h2 {
+        margin-bottom: 10px;
+        font-size: 2em;
+    }
+
+    .social-prof>div>p {
+        font-size: 1.3em;
+    }
+
+    /* Testimonials */
+    .sub-testimonials {
+        display: grid;
+        grid-template-columns: auto;
+        gap: 10px;
+    }
+
+    .review-one>div>span {
+        font-size: 1.5em;
+    }
+
+    .review-one img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .review-one>div>p {
+        font-size: 1.3em;
+    }
+
+    /* Pricing Plans */
+    .sub-plans {
+        display: grid;
+        grid-template-columns: auto;
+        gap: 10px;
+    }
+
+    .plan-card {
+        width: 100%;
+    }
+
+    .plan-card h3 {
+        font-size: 1.8em;
+    }
+
+
+    .plan-info {
+        font-size: 1.3em;
+    }
+
+    .vorteile-plan {
+        font-size: 1.3em;
+    }
+
+    .prise-plan {
+        font-size: 1.3em;
+    }
+
+    .plan-button a {
+        font-size: 1.5em;
+    }
+
+    /* footer */
+    .subscribe p {
+        font-size: 1.8em;
+        width: 90%;
+        line-height: 1.5;
+    }
+
+    textarea {
+        width: 90%;
+        border: none;
+        height: 50px;
+        padding-top: 14px;
+    }
+
+    form button {
+        font-size: 1.4em;
+    }
+
+    .sub-footer {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        font-size: 1.3em;
+
+    }
+
+    .copy {
+        font-size: 1.3em;
+        line-height: 1.5;
     }
 
 
