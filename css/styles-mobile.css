@@ -95,7 +95,7 @@
 
     .hamburger span {
         display: block;
-        height: 2px;
+        height: 3px;
         width: 100%;
         background: black;
         transition: all 0.3s ease;
@@ -106,8 +106,8 @@
         left: -100%;
         top: 0;
         background-color: gold;
-        padding: 80px 30px;
-        width: 80%;
+        padding: 30px 30px;
+        width: 70%;
         height: 100vh;
         max-width: 300px;
         z-index: 2999;
@@ -133,6 +133,18 @@
 
     .menu-toggle:checked~.menu-mobile {
         left: 0;
+    }
+
+    .menu-toggle:checked+.hamburger span:nth-child(1) {
+        transform: translateY(9px) rotate(45deg);
+    }
+
+    .menu-toggle:checked+.hamburger span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-toggle:checked+.hamburger span:nth-child(3) {
+        transform: translateY(-9px) rotate(-45deg);
     }
 
     .overlay {
@@ -216,6 +228,7 @@
     .banner-titel p {
         font-size: 1.5em;
         line-height: 1.6;
+        width: 400px;
     }
 
     .banner-titel button a {
@@ -243,7 +256,6 @@
     }
 
     /************************** Services ***************************/
-
     .sub-survices {
         display: flex;
         justify-content: space-between;
@@ -259,6 +271,38 @@
         gap: 10px;
         font-size: 1.3em;
     }
+
+    /* My Teaching Method */
+    .sub-teaching {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 80px;
+    }
+
+    .sub-teaching img {
+        width: 70%;
+        border-radius: 200px;
+        background-color: gold;
+        padding-right: 20px;
+    }
+
+    .sub-teaching>div {
+        text-align: center;
+        font-size: 1.3em;
+
+    }
+
+    .sub-teaching>div>p {
+        padding: 8%;
+        font-size: 1.3em;
+    }
+
+    .sub-teaching>div>a {
+        font-size: 1.5em;
+    }
+
 
 
     /* Social Proof */
@@ -276,7 +320,8 @@
     .strength {
         margin-bottom: 50px;
         width: 100%;
-        font-size: 1.3em
+        font-size: 1.3em;
+        text-align: start;
     }
 
     .strength>div>h2 {
@@ -509,7 +554,7 @@
 
     .hamburger span {
         display: block;
-        height: 2px;
+        height: 3px;
         width: 100%;
         background: black;
         transition: all 0.3s ease;
@@ -520,7 +565,7 @@
         left: -100%;
         top: 0;
         background-color: gold;
-        padding: 80px 30px;
+        padding: 40px 30px;
         width: 80%;
         height: 100vh;
         max-width: 300px;
@@ -546,6 +591,18 @@
 
     .menu-toggle:checked~.menu-mobile {
         left: 0;
+    }
+
+    .menu-toggle:checked+.hamburger span:nth-child(1) {
+        transform: translateY(9px) rotate(45deg);
+    }
+
+    .menu-toggle:checked+.hamburger span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-toggle:checked+.hamburger span:nth-child(3) {
+        transform: translateY(-9px) rotate(-45deg);
     }
 
     .overlay {

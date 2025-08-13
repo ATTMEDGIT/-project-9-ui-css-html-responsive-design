@@ -93,7 +93,7 @@
 
     .hamburger span {
         display: block;
-        height: 2px;
+        height: 3px;
         width: 100%;
         background: black;
         transition: all 0.3s ease;
@@ -104,7 +104,7 @@
         left: -100%;
         top: 0;
         background-color: gold;
-        padding: 80px 30px;
+        padding: 40px 30px;
         width: 80%;
         height: 100vh;
         max-width: 300px;
@@ -132,6 +132,18 @@
 
     .menu-toggle:checked~.menu-mobile {
         left: 0;
+    }
+
+    .menu-toggle:checked+.hamburger span:nth-child(1) {
+        transform: translateY(9px) rotate(45deg);
+    }
+
+    .menu-toggle:checked+.hamburger span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-toggle:checked+.hamburger span:nth-child(3) {
+        transform: translateY(-9px) rotate(-45deg);
     }
 
     .overlay {
