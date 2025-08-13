@@ -282,7 +282,7 @@
     }
 
     .sub-teaching img {
-        width: 70%;
+        width: 75%;
         border-radius: 200px;
         background-color: gold;
         padding-right: 20px;
@@ -290,13 +290,20 @@
 
     .sub-teaching>div {
         text-align: center;
-        font-size: 1.3em;
+        font-size: 1.2em;
+    }
 
+    .sub-teaching>div>h4 {
+        padding: 0 13%;
+        line-height: 1.5;
     }
 
     .sub-teaching>div>p {
-        padding: 8%;
         font-size: 1.3em;
+        line-height: 1.5;
+        padding: 0 15%;
+        text-align: center;
+        width: 500px;
     }
 
     .sub-teaching>div>a {
